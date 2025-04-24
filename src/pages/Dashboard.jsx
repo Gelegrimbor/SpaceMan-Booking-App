@@ -35,7 +35,6 @@ export default function Dashboard() {
   };
 
   useEffect(() => {
-    // Add theme class on mount
     document.body.classList.add('dashboard-page');
 
     const unsub = onAuthStateChanged(auth, async (currentUser) => {
@@ -65,7 +64,6 @@ export default function Dashboard() {
       }
     });
 
-    // Cleanup class on unmount
     return () => {
       document.body.classList.remove('dashboard-page');
       unsub();
@@ -117,9 +115,17 @@ export default function Dashboard() {
       <ToastContainer position="top-right" autoClose={2500} />
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h2 className="text-white">🎟️ Your Bookings</h2>
-        <button className="btn btn-outline-danger" onClick={handleLogout}>
-          Logout
-        </button>
+        <div>
+          <button
+            className="btn btn-outline-primary me-2"
+            onClick={() => navigate('/events')}
+          >
+            View Events
+          </button>
+          <button className="btn btn-outline-danger" onClick={handleLogout}>
+            Logout
+          </button>
+        </div>
       </div>
 
       <BookingForm
