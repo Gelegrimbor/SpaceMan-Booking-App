@@ -1,7 +1,7 @@
 /* App.css */
 
 body {
-  background-color: #1e1e1e;
+  background-color: #121212;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,8 +9,9 @@ body {
 }
 
 body.events-page,
-body.dashboard-page {
-  background-color: #1e1e1e;
+body.dashboard-page,
+body.signup-page {
+  background-color: #121212;
 }
 
 .container {
@@ -136,7 +137,8 @@ h2 {
   text-align: center;
 }
 
-.login-page {
+.login-page,
+.signup-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +146,8 @@ h2 {
   background-color: #121212;
 }
 
-.login-box {
+.login-box,
+.signup-box {
   background: #2e2e2e;
   padding: 2rem 2.5rem;
   border-radius: 12px;
@@ -154,7 +157,8 @@ h2 {
   color: #f4f4f4;
 }
 
-.login-box h2 {
+.login-box h2,
+.signup-box h2 {
   margin-bottom: 1.5rem;
   color: #ffffff;
   font-weight: 600;
