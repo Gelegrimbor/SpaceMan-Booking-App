@@ -10,7 +10,8 @@ body {
 
 body.events-page,
 body.dashboard-page,
-body.signup-page {
+body.signup-page,
+body.admin-page {
   background-color: #121212;
 }
 
@@ -138,7 +139,8 @@ h2 {
 }
 
 .login-page,
-.signup-page {
+.signup-page,
+.admin-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +149,8 @@ h2 {
 }
 
 .login-box,
-.signup-box {
+.signup-box,
+.admin-box {
   background: #2e2e2e;
   padding: 2rem 2.5rem;
   border-radius: 12px;
@@ -158,7 +161,8 @@ h2 {
 }
 
 .login-box h2,
-.signup-box h2 {
+.signup-box h2,
+.admin-box h2 {
   margin-bottom: 1.5rem;
   color: #ffffff;
   font-weight: 600;
